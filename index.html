@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <button class="btn" onclick="show('baseline')">BASELINE</button>
+      <button class="btn" onclick="show('leading')">LEADING</button>
+      <button class="btn" onclick="show('stacked')">STACKED</button>
+    </div>
+    <!-- leading snackbar -->
+    <div class="leading-snackbar center-snackbar hidden">
+      <div class="snackbar">
+        <div class="snackbar-text">Can't send photo. Retry</div>
+        <div class="snackbar-left-btn">
+          <button class="snackbar-btn">RETRY</button>
+          <button class="snackbar-cancle-btn">
+            <i class="bi bi-x-lg snackbar-cancle-btn"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <!-- baseline snackbar -->
+    <div class="baseline-snackbar hidden">
+      <div class="snackbar">
+        <div class="snackbar-text">Can't send photo. Retry</div>
+        <div class="snackbar-left-btn">
+          <button class="snackbar-btn">RETRY</button>
+          <button class="snackbar-cancle-btn">
+            <i class="bi bi-x-lg snackbar-cancle-btn"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <!-- stacked snakbar -->
+    <div class="stacked-snackbar center-snackbar hidden">
+      <div class="snackbar stacked">
+        <div class="snackbar-text">
+          This item already has the label "travel". You can add a new label.
+        </div>
+        <div class="snackbar-left-btn stacked-btn">
+          <button class="snackbar-btn">ADD A NEW LABLE</button>
+          <button class="snackbar-cancle-btn">
+            <i class="bi bi-x-lg snackbar-cancle-btn"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

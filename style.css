@@ -1,0 +1,144 @@
+/* icons  link */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+/* font link */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+
+/* || reset css */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* || reset for btn */
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* variables */
+:root {
+  --main-box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  --hover-effect-color: #d6d6d6;
+  --light-gray: rgb(210, 210, 210);
+  --dark-grey-font: rgb(102, 102, 102);
+
+  --badge-blue: rgb(63, 80, 181);
+  --snackbar-dark: rgb(51, 51, 51);
+  --snackbar-font: hsla(0, 0%, 100%, 0.87);
+  --snackbar-purple: rgb(187, 134, 252);
+}
+
+/* || basic layout main container*/
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* || genral styling */
+html {
+  font-size: 100%;
+}
+body {
+  background-color: #f7f7f7;
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 1rem;
+}
+p {
+  font-size: 0.9rem;
+}
+
+/* media query */
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+.btn {
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  margin: 2rem;
+  box-shadow: var(--main-box-shadow);
+  color: white;
+  background-color: var(--badge-blue);
+}
+
+.btn:hover {
+  filter: brightness(85%);
+}
+.snackbar-text {
+  font-size: 0.84rem;
+  font-weight: 400;
+}
+.snackbar {
+  display: flex;
+  background-color: var(--snackbar-dark);
+  color: var(--snackbar-font);
+  width: 25rem;
+  padding: 1rem;
+  line-height: 1.5;
+  border-radius: 4px;
+  margin: 6px;
+}
+
+.snackbar-left-btn {
+  display: flex;
+  margin-left: auto;
+}
+.snackbar-cancle-btn {
+  font-size: 1rem;
+  background-color: transparent;
+  font-weight: 300;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  padding: 0px 5px;
+}
+.snackbar-cancle-btn:hover {
+  filter: brightness(85%);
+}
+.snackbar-btn {
+  background-color: transparent;
+  font-weight: 300;
+  color: var(--snackbar-purple);
+  margin-right: 0.6rem;
+  cursor: pointer;
+}
+.snackbar-btn:hover {
+  filter: brightness(88%);
+}
+
+/* stacked */
+.stacked {
+  flex-direction: column;
+}
+.stacked-btn {
+  margin-top: 14px;
+}
+
+/* base line */
+.baseline-snackbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.center-snackbar {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%);
+}
+
+/* hidden */
+.hidden {
+  display: none;
+}
